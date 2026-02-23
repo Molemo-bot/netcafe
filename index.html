@@ -1,1 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Moscafe | Community Internet Cafe & Digital Hub</title>
 
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background: #0a192f;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #64ffda;
+}
+
+.hero {
+    background: linear-gradient(rgba(10,25,47,0.85), rgba(10,25,47,0.85)),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #64ffda;
+    color: #0a192f;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #52e0c4;
+}
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #0a192f;
+}
+
+.services {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.card {
+    background: #f4f4f4;
+    padding: 30px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #0a192f;
+}
+
+.investor-section {
+    background: #0a192f;
+    color: white;
+}
+
+.investor-section p {
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.metrics {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.metric-box {
+    text-align: center;
+}
+
+.metric-box h2 {
+    font-size: 2rem;
+    color: #64ffda;
+}
+
+.contact-form {
+    max-width: 500px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background: #0a192f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .hero h1{
+        font-size: 1.8rem;
+    }
+
+    nav{
+        margin-top: 10px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 8px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">MOSCAFE DIGITAL HUB</div>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#investors">Investors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Empowering Communities Through Digital Access</h1>
+    <p>Moscafe is a modern Internet Café and Digital Support Hub focused on bridging the digital divide and enabling economic participation.</p>
+    <button class="btn" onclick="scrollToContact()">Partner With Us</button>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Moscafe</h2>
+    <p>
+        Moscafe is a community-centered digital hub providing affordable internet access,
+        business services, regulatory compliance assistance, and digital literacy support.
+        Our mission is to create opportunities through technology.
+    </p>
+</section>
+
+<section id="services">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Internet & Printing</h3>
+            <p>High-speed internet access, printing, scanning and document services.</p>
+        </div>
+        <div class="card">
+            <h3>Business Compliance</h3>
+            <p>Assistance with CIPC, SARS, company registration and digital submissions.</p>
+        </div>
+        <div class="card">
+            <h3>Digital Skills Support</h3>
+            <p>Basic computer training and CV/application support for job seekers.</p>
+        </div>
+    </div>
+</section>
+
+<section id="investors" class="investor-section">
+    <h2 class="section-title" style="color:white;">Investment Opportunity</h2>
+    <p>
+        Moscafe operates in an underserved community with high demand for digital services.
+        We combine affordable pricing, skilled technical support, and compliance expertise
+        to create sustainable revenue streams and measurable community impact.
+    </p>
+
+    <div class="metrics">
+        <div class="metric-box">
+            <h2>Low</h2>
+            <p>Operational Overhead</p>
+        </div>
+        <div class="metric-box">
+            <h2>High</h2>
+            <p>Community Demand</p>
+        </div>
+        <div class="metric-box">
+            <h2>Scalable</h2>
+            <p>Business Model</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact / Partnership Enquiries</h2>
+
+    <div class="contact-form">
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button class="btn" type="submit">Send Enquiry</button>
+        </form>
+        <p id="formMessage"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Moscafe Digital Hub | All Rights Reserved</p>
+</footer>
+
+<script>
+function scrollToContact(){
+    document.getElementById("contact").scrollIntoView({behavior:"smooth"});
+}
+
+function submitForm(event){
+    event.preventDefault();
+    document.getElementById("formMessage").innerText =
+    "Thank you for your enquiry. Our team will contact you shortly.";
+}
+</script>
+
+</body>
+</html>
